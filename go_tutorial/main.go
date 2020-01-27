@@ -10,10 +10,14 @@ import "fmt"
 // We then need to define our main function.
 // Think of this as the entry point to our Go
 // program
+const englishHelloPrefix = "Hello, "
+
 func Hello(name string) string {
-    return "Hello, " + name
+    if name == "" {
+        name = "World"
+    }
+    return englishHelloPrefix + name
 }
-    
 func main() {
     // within this main function, we then
     // want to call a function within the fmt
