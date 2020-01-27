@@ -18,6 +18,7 @@ func Hello(name string) string {
     }
     return englishHelloPrefix + name
 }
+
 func main() {
     // within this main function, we then
     // want to call a function within the fmt
